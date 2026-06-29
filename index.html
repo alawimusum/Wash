@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Clean Auto | مغسلة سيارات</title>
+    <meta name="description" content="مرحباً بكم في Good Clean Auto - مغسلة سيارات فاخرة. تجربة غسيل فريدة ومتميزة لسيارتك.">
+    
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="Good Clean Auto | مغسلة سيارات">
+    <meta property="og:description" content="تجربة غسيل فريدة ومتميزة لسيارتك.">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS or generic custom stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon placeholder (Uses custom styling inline) -->
+    <link rel="icon" type="image/jpeg" href="logo.jpeg">
+</head>
+<body>
+
+    <!-- Welcome Interaction Overlay -->
+    <div id="interaction-overlay" class="interaction-overlay">
+        <div class="overlay-card">
+            <img src="logo.jpeg" alt="Good Clean Auto Logo" class="overlay-logo">
+            <h2 class="overlay-title">مرحباً بك في Good Clean Auto</h2>
+            <p class="overlay-subtitle">اضغط البدء لتشغيل الفيديو بالصوت والاستماع للترحيب</p>
+            <button class="overlay-btn" id="overlay-start-btn">
+                <span>ابدأ الآن</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Decorative Background -->
+    <div class="bg-decorations">
+        <div class="bg-grid"></div>
+        <div class="glow-orb-1"></div>
+        <div class="glow-orb-2"></div>
+        <div class="water-particles"></div>
+    </div>
+
+    <!-- Main Card Container -->
+    <main class="main-container" id="landing-card">
+        <!-- Spotlight effects casting down -->
+        <div class="spotlight-container">
+            <div class="spotlight"></div>
+            <div class="spotlight"></div>
+            <div class="spotlight"></div>
+        </div>
+
+        <!-- Brand Header Section -->
+        <header class="header">
+            <img src="logo.jpeg" alt="Good Clean Auto Logo" class="logo-img" id="brand-logo">
+            <h1 class="brand-title" id="main-title">Good Clean Auto</h1>
+            <p class="brand-subtitle" id="sub-title">مغسلة سيارات</p>
+        </header>
+
+        <!-- Video Player Section -->
+        <section class="video-wrapper" aria-label="مقطع مرئي">
+            <!-- HTML5 Autoplay Video -->
+            <video id="promo-video" loop muted autoplay playsinline preload="auto">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+        </section>
+
+        <!-- Redirection Countdown Section -->
+        <section style="width: 100%;" aria-label="عداد إعادة التوجيه">
+            <p class="countdown-text" id="countdown-text">
+                سيتم توجيهك تلقائياً خلال <span class="countdown-seconds">10</span> ثوانٍ...
+            </p>
+            <div class="countdown-container">
+                <div class="countdown-bar" id="countdown-bar"></div>
+            </div>
+        </section>
+
+        <!-- Backup CTA Redirection Button -->
+        <a href="https://www.btaqa.io/join/c45789c8-97d3-4387-89f7-c25d1e2f1238" class="cta-button" id="cta-btn">
+            <span>إذا لم يتم الانتقال تلقائياً، اضغط هنا</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+        </a>
+
+        <!-- Footer Copyright -->
+        <footer class="footer-text">
+            &copy; 2026 Good Clean Auto. جميع الحقوق محفوظة.
+        </footer>
+    </main>
+
+    <!-- Interactive script file -->
+    <script src="app.js"></script>
+</body>
+</html>
